@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CCS.SspNet
+﻿namespace CCS.SspNet
 {
     public static class Constants
     {

@@ -2,7 +2,6 @@
 using CCS.SspNet.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using static CCS.SspNet.Utilities.CrcUtilities;
 
 namespace CCS.SspNet.Communication
@@ -51,7 +50,7 @@ namespace CCS.SspNet.Communication
                     // Byte stuffing has occured. Do not copy byte.
                     foundSTX = false;
                     continue;
-                } 
+                }
                 else if (rawPacket[i] == Constants.STX)
                 {
                     foundSTX = true;

@@ -2,9 +2,7 @@
 using CCS.SspNet.Exceptions;
 using FluentAssertions;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -73,7 +71,7 @@ namespace CCS.SspNet.Tests.Communication
 
             var packet = await sr.ReadRawPacketAsync();
 
-            packet.Should().BeEquivalentTo(byteUnstuffedPacket); 
+            packet.Should().BeEquivalentTo(byteUnstuffedPacket);
 
         }
 

@@ -1,8 +1,6 @@
 ﻿using CCS.SspNet.Exceptions;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CCS.SspNet.Communication
@@ -12,7 +10,7 @@ namespace CCS.SspNet.Communication
         private readonly byte[] packetBuffer;
         private short currentLength = 0;
 
-        public SspStreamReader(Stream stream) 
+        public SspStreamReader(Stream stream)
         {
             if (!stream.CanRead) throw new ArgumentException("Stream does not support reading.", nameof(stream));
             packetBuffer = new byte[260];
@@ -50,7 +48,7 @@ namespace CCS.SspNet.Communication
                     await Task.Delay(50); // There is no data yet, so we delay.
                     continue;
                 }
-                            
+
                 byte b = (byte)curByte;
 
                 if (currentLength == 0 && b != Constants.STX)

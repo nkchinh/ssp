@@ -1,5 +1,4 @@
 using CCS.SspNet.Communication;
-using CCS.SspNet.Interfaces;
 using System;
 using Xunit;
 using FluentAssertions;

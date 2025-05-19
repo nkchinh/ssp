@@ -1,9 +1,4 @@
-﻿using CCS.SspNet.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CCS.SspNet.Communication
+﻿namespace CCS.SspNet.Communication
 {
     //internal struct SspPacket
     //{

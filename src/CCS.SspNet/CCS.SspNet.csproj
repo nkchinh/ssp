@@ -3,14 +3,33 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageId>SSP.net</PackageId>
+    <PackageId>NKChinh.SSP.net</PackageId>
     <Authors>Jeff Tedrow</Authors>
     <Company />
     <Product>SSP.net</Product>
-    <Description>.NET Standard Library for Integrating with devices using SSP (Smiley Secure Prototcol).</Description>
+    <Description>Custom build of .NET Standard Library for Integrating with devices using SSP (Smiley Secure Prototcol).</Description>
     <Copyright>©2020 All Rights Reserved</Copyright>
-    <RepositoryUrl>https://github.com/jetedrow/ssp</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/nkchinh/ssp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nkchinh/ssp</RepositoryUrl>
+    <!--Package tags-->
+    <PackageTags>
+      SSP;
+      Smiley Secure Protocol;
+      Secure Serial communication protocol;
+      Serial communication;
+      Cash handling;
+      Payment system;
+      Gaming machine;
+      Hardware communication
+  </PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\README.md" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
